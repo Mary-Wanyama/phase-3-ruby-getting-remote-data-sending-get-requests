@@ -6,5 +6,5 @@ url = 'https://learn-co-curriculum.github.io/json-site-example/endpoints/locatio
 
 uri = URI.parse(url)
 response = Net::HTTP.get_response(uri)
-
-p JSON.parse(response.body)
+response.body
+puts JSON.parse(response.body)
